@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Privacy Policy — My Workspace</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,600;0,9..40,700;1,9..40,400&family=Fraunces:ital,opsz,wght@0,9..144,600;0,9..144,700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --ink: #14121a;
+      --muted: #4a4258;
+      --line: #e4dff0;
+      --card: #ffffff;
+      --wash: #f6f2fc;
+      --violet-1: #6b4ce6;
+      --violet-2: #9b7dff;
+      --glow: rgba(107, 76, 230, 0.2);
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: "DM Sans", system-ui, -apple-system, sans-serif;
+      color: var(--ink);
+      background: var(--wash);
+      line-height: 1.6;
+    }
+    .wrap {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 0 1.25rem 3rem;
+    }
+    .hero {
+      position: relative;
+      padding: 2.5rem 0 2.75rem;
+      margin: 0 -1.25rem 2rem;
+      background:
+        radial-gradient(120% 100% at 0% 0%, rgba(155, 125, 255, 0.25) 0%, transparent 55%),
+        radial-gradient(100% 80% at 100% 0%, rgba(107, 76, 230, 0.35) 0%, transparent 50%),
+        linear-gradient(165deg, #1a0f2e 0%, #2d1b4e 45%, #3d2870 100%);
+      color: #f4f0ff;
+      text-align: center;
+      border-radius: 0 0 1.75rem 1.75rem;
+      box-shadow: 0 20px 50px var(--glow);
+      overflow: hidden;
+    }
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.06'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+      pointer-events: none;
+      opacity: 0.9;
+    }
+    .hero .inner { position: relative; z-index: 1; padding: 0 1.25rem; }
+    .badge {
+      display: inline-block;
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #c4b5fd;
+      margin-bottom: 0.75rem;
+    }
+    h1 {
+      font-family: "Fraunces", Georgia, serif;
+      font-size: clamp(1.75rem, 4vw, 2.25rem);
+      font-weight: 700;
+      margin: 0 0 0.5rem;
+      line-height: 1.2;
+    }
+    .sub {
+      margin: 0;
+      font-size: 0.95rem;
+      color: #d8cffc;
+      max-width: 28em;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .date-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      margin-top: 1.25rem;
+      padding: 0.4rem 0.85rem;
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: 999px;
+      font-size: 0.8rem;
+      color: white!important;
+    }
+    section {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 1rem;
+      padding: 1.35rem 1.4rem 1.5rem;
+      margin-bottom: 1.1rem;
+      box-shadow: 0 4px 20px rgba(20, 18, 26, 0.04);
+    }
+    h2 {
+      font-family: "Fraunces", Georgia, serif;
+      font-size: 1.2rem;
+      font-weight: 600;
+      margin: 0 0 0.75rem;
+      color: #2d1f45;
+    }
+    p, li { color: var(--muted); font-size: 0.95rem; }
+    p { margin: 0 0 0.85rem; }
+    p:last-child { margin-bottom: 0; }
+    ul { margin: 0.25rem 0 0; padding-left: 1.1rem; }
+    li { margin-bottom: 0.45rem; }
+    a {
+      color: var(--violet-1);
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+    a:hover { color: var(--violet-2); }
+    .callout {
+      background: linear-gradient(135deg, #f0ebff 0%, #e8e0ff 100%);
+      border: 1px solid #d4c8f5;
+      border-radius: 0.75rem;
+      padding: 1rem 1.1rem;
+      margin-top: 0.75rem;
+    }
+    .callout p { color: #3a3160; margin: 0; font-size: 0.9rem; }
+    .footer {
+      text-align: center;
+      color: #7a708c;
+      font-size: 0.85rem;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="inner">
+      <span class="badge">Legal · Transparency</span>
+      <h1>Privacy Policy</h1>
+      <p class="sub"><strong>We do not keep your data on our servers.</strong> Everything lives on your device&mdash;the app, your account, and your database are all local to you.</p>
+      <p class="date-pill" aria-label="Last updated">Last updated: April 18, 2026</p>
+    </div>
+  </header>
+
+  <div class="wrap">
+    <section id="summary">
+      <h2>Summary</h2>
+      <p><strong>We (the developer) do not receive, store, or have access to your app data on our systems.</strong> <strong>My Workspace</strong> has no online account database on our side. Your account, password, and your SQLite database exist <strong>only on your own device</strong>&mdash;the app does not send them to us and we do not sync them to our servers.</p>
+      <p>This page describes what the app may keep <em>on your device</em> and how the Play Store or your email works if you <em>choose</em> to contact us. It is not a claim that we hold a copy of your workspace.</p>
+    </section>
+
+    <section id="collect">
+      <h2>What the app stores on <em>your</em> device (not on our servers)</h2>
+      <p>We are <strong>not</strong> &ldquo;collecting&rdquo; this information into a database that we run. The app is offline-first and local. On your phone or tablet only, the following may be saved:</p>
+      <ul>
+        <li><strong>Account &amp; sign-in:</strong> the name and email you enter, plus a <strong>password hash</strong> (a one-way form used to verify your password) so you can sign in&mdash;all in SQLite on the device. Your real password is not sent to us and is not stored on our computers.</li>
+        <li><strong>App session data:</strong> a small local cache so the app can remember you are signed in, still only on the device.</li>
+        <li><strong>Workspace data:</strong> your projects, tasks, time entries, comments, boards, and related content in the on-device <strong>SQLite</strong> database. We never receive this database and cannot read it from here.</li>
+        <li><strong>If you open &ldquo;Contact&rdquo; and use your own mail app</strong> to email us, that is your choice. The app is not automatically uploading your account or tasks to us; any email is a normal message you send yourself.</li>
+      </ul>
+    </section>
+
+    <section id="use">
+      <h2>How that local data is used (still only on the device)</h2>
+      <p>The app on your device uses the data above to:</p>
+      <ul>
+        <li>Log you in and show your profile and workspace.</li>
+        <li>Store and show the tasks and content you create.</li>
+        <li>Run normal app features (editing, deleting, navigation between screens).</li>
+      </ul>
+      <p>Because we have no copy of your data, <strong>we do not use your workspace for analytics, training, or resale&mdash;we never receive it</strong>. We do not sell personal information that we do not have.</p>
+    </section>
+
+    <section id="sharing">
+      <h2>Third parties, sharing, and the developer (us)</h2>
+      <p><strong>We do not get your data from the app in the background.</strong> The SQLite database, credentials, and workspace content are not uploaded to a service we operate. There is <strong>no</strong> cloud backup or sync to our company that pulls your data off the device.</p>
+      <p>Data may only leave <em>your</em> control in the usual, platform-level ways&mdash;for example, if you email us (your mail provider), if Google Play delivers updates, or if your device backup copies app data&mdash;those are between you, Google, and your own settings&mdash;not a pipeline from our app to our own database of users.</p>
+      <p><strong>Voluntary contact:</strong> if you contact us, your message is whatever you type in an email. That is not the same as the app silently sending your SQLite data to us.</p>
+      <p class="muted-small" style="color: var(--muted); font-size: 0.88rem; margin-top: 0.5rem;">Standard Android / Google Play and device systems may process technical or diagnostic information according to <a href="https://policies.google.com/privacy" rel="noopener noreferrer" target="_blank">Google&rsquo;s policies</a> and your device&mdash;that is separate from the app&rsquo;s own local data.</p>
+      <p style="margin-top: 0.85rem;"><strong>Advertising and Google AdMob.</strong> This app is <strong>not</strong> set up to use AdMob in a way that exfiltrates your workspace. If we add ads or an SDK in the future, we will update this policy. Where Google&rsquo;s ad services apply, their rules are described in the <a href="https://policies.google.com/privacy" rel="noopener noreferrer" target="_blank">Google Privacy Policy</a> and <a href="https://policies.google.com/technologies/ads" rel="noopener noreferrer" target="_blank">How Google uses information from sites or apps that use our services</a>.</p>
+    </section>
+
+    <section id="deletion">
+      <h2>Deleting your data</h2>
+      <p>Because <strong>we do not keep a user database</strong> for the app, there is nothing for us to delete on our side. <strong>All of your data is on your device.</strong> You can remove it by:</p>
+      <ul>
+        <li><strong>Inside the app:</strong> delete individual projects, tasks, boards, comments, or other items where the app offers delete.</li>
+        <li><strong>Android &gt; Settings &gt; Apps &gt; My Workspace &gt; Storage &gt; Clear data</strong> (and/or <strong>Clear storage</strong>)&mdash;this clears the local SQLite database, including the password hash and workspace.</li>
+        <li><strong>Uninstall the app</strong> from the device&mdash;removes the app and its on-device data (backups, if any, follow your system settings).</li>
+      </ul>
+      <p>Emailing us <strong>cannot</strong> delete data on your phone&mdash;only the steps above, on your device, can erase the local app data.</p>
+    </section>
+
+    <section id="contact">
+      <h2>Contact information</h2>
+      <p>For <strong>questions</strong> about this policy (not for a &ldquo;file in our system&rdquo; that does not exist):</p>
+      <ul>
+        <li><strong>Email:</strong> <a href="mailto:onsauravdev@gmail.com?subject=My%20Workspace%20-%20Privacy%20inquiry">onsauravdev@gmail.com</a></li>
+        <li><strong>In the app:</strong> use the Contact flow (where available) to open a pre-filled message to the same support address.</li>
+      </ul>
+      <div class="callout" role="note">
+        <p><strong>Host this file on a public site.</strong> For Google Play, the Privacy policy URL must be a live, publicly reachable page. Upload <code>privatepolict.html</code> to your own domain or site (GitHub Pages, your blog, etc.) and paste that <strong>https</strong> URL in Play Console.</p>
+      </div>
+    </section>
+
+    <section id="changes">
+      <h2>Changes to this policy</h2>
+      <p>We may update this page if the app gains new features (for example, cloud sync) or if rules change. The &ldquo;Last updated&rdquo; date will change when we do. A local-only, no-server data model is our current design.</p>
+    </section>
+
+    <p class="footer">© My Workspace. Local data only&mdash;no developer-held user database. Host this file at a public HTTPS URL for Google Play.</p>
+  </div>
+</body>
+</html>
